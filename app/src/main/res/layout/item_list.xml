@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blur_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63303030">
+
+        <LinearLayout
+            android:id="@+id/search_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    style="@style/BoldTitleTextTheme"
+                    android:id="@+id/S_Name"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/SecondaryTextTheme"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:id="@+id/S_Job"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Nafas"
+                    style="@style/SecondaryTextTheme"
+                    android:textColor="@color/white"
+                    android:id="@+id/S_address"/>
+
+
+            </LinearLayout>
+
+
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

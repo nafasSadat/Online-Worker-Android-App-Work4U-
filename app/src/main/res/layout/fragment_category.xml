@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#7A474747" />
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/secondView"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardViewelectrical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electircal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imvCornerRadiusWithStroke"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/grouupp"
+                        android:padding="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#899091"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        style="@style/BoldTitleTextTheme"
+                        android:text="Electrical"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/idskdfj"/>
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardviewplumbing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electirca3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/plumingimg"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/plummm"
+                        android:padding="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#414343"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Plumbing"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        style="@style/BoldTitleTextTheme"
+                        android:id="@+id/idskdfj3"/>
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardviewpainting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electi4rca4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/paintingimg"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/painting"
+                        android:padding="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#414343"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        style="@style/BoldTitleTextTheme"
+                        android:text="Painter"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/idskdfj4"/>
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/secondView"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardviewcarpentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electirca2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/paintingimffg"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/capert"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#414343"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        style="@style/BoldTitleTextTheme"
+                        android:text="Carpentry"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/plumbing"/>
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardviewland"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electirca4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/landimg"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:padding="2dp"
+                        android:src="@drawable/belll"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#414343"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        style="@style/BoldTitleTextTheme"
+                        android:text="Land Scaping"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/plumbing4"/>
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardviewpowerman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electirca45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/dfdf"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="1dp"
+                        android:padding="2dp"
+                        android:src="@drawable/mannn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#414343"
+                        app:strokeWidth="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        style="@style/BoldTitleTextTheme"
+                        android:text="Man Power"
+                        android:textSize="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/plumbing54"/>
+                </LinearLayout>
+            </eightbitlab.com.blurview.BlurView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

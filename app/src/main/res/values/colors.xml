@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#AAFFFFFF</color>
+    <color name="purple_500">#AAFFFFFF</color>
+    <color name="purple_700">#AAFFFFFF</color>
+    <color name="teal_200">#AAFFFFFF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#AAFFFFFF</color>
+
+    <color name="colorAccent">#8CDDD6</color>
+
+    <color name="itemcolor">#19335795</color>
+
+    <color name="colorBlack">#1E1E1E</color> <!-- We will no use the regular #000000 -->
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

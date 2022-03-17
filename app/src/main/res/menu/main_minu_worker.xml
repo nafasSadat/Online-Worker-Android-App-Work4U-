@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:title=" "
+        android:id="@+id/worker_notifiy"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        />
+    <item
+        android:title="Logout"
+        android:id="@+id/worker_logout"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_logout_24"
+
+        />
+
+</menu>

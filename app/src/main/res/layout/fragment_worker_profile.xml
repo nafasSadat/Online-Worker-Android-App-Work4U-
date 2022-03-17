@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#7A474747" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/workrimgp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ppp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/editphtoworker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Imagee"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/workrimgp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/uploadtodbworker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:background="@drawable/ic_baseline_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.751"
+                    app:layout_constraintStart_toStartOf="@id/editphtoworker"
+                    app:layout_constraintTop_toBottomOf="@+id/workrimgp">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editphtoworker"
+                    tools:ignore="MissingConstraints">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/editnamew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_person_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Name"
+                            android:inputType="textAutoComplete"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/editlname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_person_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Last Name"
+                            android:inputType="textAutoComplete"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/editemailw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_email_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Email"
+                            android:inputType="textEmailAddress"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_phonew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_contact_phone_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Phone Number"
+                            android:inputType="number"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_agew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_calendar_view_month_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Age"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_expe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_expw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_calendar_view_month_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Experiences"
+                            android:inputType="textAutoComplete"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView10">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_salaryw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_salaryw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Expected Salary"
+                            android:inputType="number"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView11">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_addressw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_addressw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Address"
+                            android:inputType="textAutoComplete"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_passw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <EditText
+                            android:id="@+id/edit_passw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:hint="Your Password"
+                            android:inputType="textPassword"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_updatew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <TextView
+                            android:id="@+id/updatew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_edit_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:padding="15dp"
+                            android:text="Update"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B"
+                            android:textSize="15dp" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="2dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/cardView15"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+                    <eightbitlab.com.blurview.BlurView
+                        android:id="@+id/blur_savew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#63303030">
+
+                        <TextView
+                            android:id="@+id/savew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/ic_baseline_check_24"
+                            android:drawablePadding="15dp"
+                            android:drawableTint="#8B8B8B"
+                            android:text="Save"
+                            android:padding="15dp"
+                            android:textSize="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="#8B8B8B" />
+
+                    </eightbitlab.com.blurview.BlurView>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

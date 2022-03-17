@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#7A474747"
+        app:logo="@drawable/ic_baseline_home_24"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/secondView"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#7A474747" />
+
+
+        <androidx.cardview.widget.CardView
+            tools:ignore="MissingConstraints"
+            android:id="@+id/cardViewelectrical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blur_electircal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#63303030">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/singleimg"
+                        android:layout_width="150dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/prif2"
+                        android:padding="1dp"
+                        android:layout_gravity="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imvCornerStroke"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                        app:strokeColor="#899091"
+                        app:strokeWidth="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Name :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="Nafas "
+                            android:id="@+id/name"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/lastname"
+                            style="@style/SecondaryTextTheme"
+                            android:text="Nafas Saadat"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Email  :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="nafassaadat901@yahoo.com "
+                            android:id="@+id/emailadd"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Phone :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="2345678901 "
+                            android:id="@+id/phonenumber"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Age     :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="33 years "
+                            android:id="@+id/age"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Skill     :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="Painter "
+                            android:id="@+id/skill"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Experience :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/exper"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="5 years "
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Daily Wage :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="20000 "
+                            android:id="@+id/salary"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Address :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="Cochin "
+                            android:id="@+id/address"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+
+                            android:textStyle="bold"
+                            android:text="Gender   :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:id="@+id/gender"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            style="@style/SecondaryTextTheme"
+                            android:text="Male "
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="Rating    :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginStart="8dp"
+                            android:id="@+id/rate"
+                            style="@style/SecondaryTextTheme"
+                            android:text="23/100 "
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/SecondaryTextTheme"
+                            android:textColor="#2196F3"
+                            android:textSize="20dp"
+                            android:id="@+id/feedbak"
+                            android:linksClickable="true"
+
+                           />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </eightbitlab.com.blurview.BlurView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>
